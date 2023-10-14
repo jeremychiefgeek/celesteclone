@@ -8,5 +8,5 @@ mkdir -p bin
 libs=-luser32
 warnings=-Wno-writable-strings
 
-clang++ -g "src/win32_game.cpp" --output="build/win32_game.exe" $libs $warnings
+clang++ -g "src/main.cpp" --output="build/win32_game.exe" $libs $warnings
 

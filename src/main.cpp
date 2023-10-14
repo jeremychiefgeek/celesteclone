@@ -1,3 +1,5 @@
+#include "engine_lib.h"
+
 static bool running = true;
 
 
@@ -37,6 +39,10 @@ LRESULT CALLBACK windows_window_callback(HWND window, UINT msg, WPARAM wParam, L
         case WM_CLOSE:
         {
             running = false;
+        } break;
+        case WM_KEYDOWN:
+        {
+            SM_ASSERT(false, "Asserting not hit.");
         } break;
         default:
         {
